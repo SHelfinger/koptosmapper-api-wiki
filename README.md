@@ -30,7 +30,8 @@ GeoJSON
 
 will output each marker from APIKEY Holder in KML format
 
-`<?xml version="1.0" encoding="UTF-8"?>
+```kml
+<?xml version="1.0" encoding="UTF-8"?>
 <kml
 	xmlns="http://www.opengis.net/kml/2.2">
 	<Schema name="koptosmapper" id="koptosmapper">
@@ -93,7 +94,7 @@ will output each marker from APIKEY Holder in KML format
 		</Placemark>
 		...
 	</Folder>
-</kml>`
+</kml>```
 
 #### GeoJSON
 
@@ -101,7 +102,8 @@ will output each marker from APIKEY Holder in KML format
 
 will output each marker from APIKEY Holder in GeoJSON format
 
-`{
+```json
+{
   "type": "FeatureCollection",
   "name": "geo-data",
   "crs": {
@@ -146,4 +148,4 @@ will output each marker from APIKEY Holder in GeoJSON format
     },
     ...
   ]
-}`
+}```
