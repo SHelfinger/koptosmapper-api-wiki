@@ -94,7 +94,8 @@ will output each marker from APIKEY Holder in KML format
 		</Placemark>
 		...
 	</Folder>
-</kml>```
+</kml>
+```
 
 #### GeoJSON
 
@@ -148,4 +149,5 @@ will output each marker from APIKEY Holder in GeoJSON format
     },
     ...
   ]
-}```
+}
+```
