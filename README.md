@@ -8,7 +8,7 @@ An API (Application Programming Interface) allows your systems (scripts, program
 
 The API is fully Restful, takes the form of simple HTTP(s) requests, and returns KML (Keyhole Markup Language) or GeoJSON, having this general format:
 
-`https://geo-data.koptosmapper.de/get.php?param=modul&modul=api&action=load&type=<FORMAT>&load=geo_data&key=<APIKEY>`
+`https://<project>.koptosmapper.de/get.php?param=modul&modul=api&action=load&type=<FORMAT>&load=geo_data&key=<APIKEY>`
 
 The API returns standard KML or GeoJSON objects that can be processed with ease in your script (see examples below).
 
@@ -26,7 +26,7 @@ GeoJSON
 
 #### KML
 
-`https://geo-data.koptosmapper.de/get.php?param=modul&modul=api&action=load&type=kml&load=geo_data&key=<APIKEY>`
+`https://<project>.koptosmapper.de/get.php?param=modul&modul=api&action=load&type=kml&load=geo_data&key=<APIKEY>`
 
 will output each marker from APIKEY Holder in KML format
 
@@ -59,7 +59,7 @@ will output each marker from APIKEY Holder in KML format
 		<SimpleField name="GADM version" type="string"/>
 	</Schema>
 	<Folder>
-		<name>kooptosmapper</name>
+		<name>koptosmapper</name>
 		<Placemark>
 			<name>Text</name>
 			<ExtendedData>
@@ -99,14 +99,14 @@ will output each marker from APIKEY Holder in KML format
 
 #### GeoJSON
 
-`https://geo-data.koptosmapper.de/get.php?param=modul&modul=api&action=load&type=geojson&load=geo_data&key=<APIKEY>`
+`https://<project>.koptosmapper.de/get.php?param=modul&modul=api&action=load&type=geojson&load=geo_data&key=<APIKEY>`
 
 will output each marker from APIKEY Holder in GeoJSON format
 
 ```json
 {
   "type": "FeatureCollection",
-  "name": "geo-data",
+  "name": "<project>",
   "crs": {
     "type": "name",
     "properties": {
